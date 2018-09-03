@@ -9,6 +9,6 @@ class mainController extends BaseController
     #function1
     public function f1()
     {
-        return "Function 1";
+        return "This is function 1";
     }
 }
