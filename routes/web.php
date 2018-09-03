@@ -11,7 +11,7 @@
 |
 */
 
-$router->get('/', 'mainController@fetch');
+$router->get('/', ['middleware' =>  'cors', 'uses'  =>  'mainController@fetch']);
 
 
 $router->get('/echo', function (){ return "Hello World"; });
