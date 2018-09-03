@@ -11,6 +11,7 @@
 |
 */
 
-$router->get('/', 'mainController@display');
+$router->get('/', 'mainController@fetch');
 
 
+$router->get('/echo', function (){ return "Hello World"; });
