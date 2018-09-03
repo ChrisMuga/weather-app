@@ -11,9 +11,6 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return "Hello World?";
-
-});
+$router->get('/', 'mainController@f1');
 
 
