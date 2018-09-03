@@ -11,6 +11,6 @@
 |
 */
 
-$router->get('/', 'mainController@f1');
+$router->get('/', 'mainController@display');
 
 
