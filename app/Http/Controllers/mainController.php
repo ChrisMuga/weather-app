@@ -6,8 +6,8 @@ use Laravel\Lumen\Routing\Controller as BaseController;
 
 class mainController extends BaseController
 {
-    #function1
-    public function display()
+    #fetch from openweathermap.org api
+    public function fetch()
     {
         $apikey     =   'bec78ab9a765701d40fc9d0b9bc1aace';
         $counter    =   0;
@@ -25,9 +25,9 @@ class mainController extends BaseController
         while($counter < $count)
         {
             #city-name
-            $cityName   =   $data["list"][$counter]["name"];
+            $cityName                   =   $data["list"][$counter]["name"];
             #temperature
-            $cityTemp   =   $data["list"][$counter]["main"]["temp"];
+            $cityTemp                   =   $data["list"][$counter]["main"]["temp"];
 
             $stack[$counter]["city"]    =   $cityName;
             $stack[$counter]["temp"]    =   $cityTemp;
